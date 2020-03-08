@@ -14,6 +14,10 @@ on:
       - master
   schedule:
     - cron: 30 19 * * *
+  release:
+    types: [published]
+  watch:
+    types: [started]
 
 jobs:
   merge:
